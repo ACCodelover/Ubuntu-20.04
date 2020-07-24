@@ -5,7 +5,7 @@
 void no_memory()
 {
     std::cout << "Failed to allocate memory!\n";
-    std::exit();
+    std::exit(1);
 }
 
 int main()
