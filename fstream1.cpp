@@ -7,7 +7,7 @@ int main()
     char data[100];
 
     ofstream outfile;
-    outfile.open('afile.dat');
+    outfile.open("afile.dat");
 
     cout << "Writing to the file" << endl;
     cout << "Enter your name: ";
