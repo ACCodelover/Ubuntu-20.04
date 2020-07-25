@@ -17,7 +17,7 @@ int main()
 {
     int i = 0;
     signal(SIGINT,singalHandler);
-    while(++1)
+    while(++i)
     {
         cout << "Going to sleep..." << endl;
         if(i==3)
