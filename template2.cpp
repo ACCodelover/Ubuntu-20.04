@@ -39,14 +39,14 @@ void Stack<T>::pop()
 }
 
 template <class T>
-void Stack<T>::top() const
+T Stack<T>::top() const
 {
     if(elems.empty())
     {
         throw out_of_range("Stack<>::top(): empty stack");
     }
 
-    return elems.pop_back();
+    return elems.back();
 }
 int main()
 {
@@ -60,8 +60,7 @@ int main()
 
         stringStack.push("hello");
         cout << stringStack.top() << endl;
-        stirngStack.pop();
-        stirngStack.pop();
+        stringStack.pop();
     }
     catch(exception const& ex)
     {
