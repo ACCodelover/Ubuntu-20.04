@@ -14,6 +14,7 @@ class Stack {
   public:
     void push(T const&);  // 入栈
     void pop();               // 出栈
+    //函数声明后面的const表示不对数据成员进行修改
     T top() const;            // 返回栈顶元素
     bool empty() const{       // 如果为空则返回真。
         return elems.empty();
